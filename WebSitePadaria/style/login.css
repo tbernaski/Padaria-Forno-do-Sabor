@@ -1,0 +1,279 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f2e9;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #d8be95; 
+    padding: 10px 20px;
+    border-bottom: 2px solid #d1d1b0; 
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: #d8be95;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+    background-color: #ffe0b2;
+    color: #8b0000;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: none;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+button:hover {
+    background-color: #b22222;
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px #666;
+    color: #8b0000;
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0 30px 0; 
+}
+
+p {
+    margin: 20px 0; 
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #8b0000; 
+    transition: background-color 0.3s; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #d8be95; 
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #d8be95; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
+    display: block; 
+}
+
+.submenu a:hover {
+    background-color: #ffe0b2; 
+    color: #8b0000; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #d8be95; 
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #ffe0b2; 
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.page-item {
+    color: #8b0000; 
+    background-color: #d8be95; 
+    border: 1px solid #d8be95; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+}
+
+.loginForm {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 50px auto; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #742a32;
+}
+
+button {
+    background-color: #742a32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: #d8be95;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons .social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.servico-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: transparent; 
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .loginForm {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

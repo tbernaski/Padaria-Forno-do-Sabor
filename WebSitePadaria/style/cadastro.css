@@ -1,0 +1,375 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f2e9;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #d8be95;
+    padding: 10px 20px;
+    border-bottom: 2px solid #d1d1b0;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: #d8be95;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+    background-color: #ffe0b2;
+    color: #8b0000;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px #666;
+    color: #8b0000;
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0 30px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #8b0000;
+    transition: background-color 0.3s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d8be95;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #d8be95;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #ffe0b2;
+    color: #8b0000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #d8be95;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #ffe0b2;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.page-item {
+    color: #8b0000;
+    background-color: #d8be95;
+    border: 1px solid #d8be95;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.cadastroForm {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-pequeno {
+    width: 150px;
+}
+
+button {
+    background-color: #742a32;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.btn-danger {
+    background-color: #8b0000;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+footer {
+    background-color: #d8be95;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons .social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.servico-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5dc;
+        color: #333;
+    }
+
+    .cabecalho {
+        background-color: #d8be95;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #d1d1b0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 2em;
+    }
+
+    h2 {
+        margin: 15px 0;
+        font-size: 1.5em;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu li {
+        position: relative;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #8b0000;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+        text-decoration: none;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #d8be95;
+        list-style: none;
+        padding: 10px;
+        border: 1px solid #d8be95;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .submenu li {
+        margin: 5px 0;
+    }
+
+    .submenu a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .dropdown:hover .submenu,
+    .dropdown:focus-within .submenu {
+        display: block;
+    }
+
+    .submenu a:hover {
+        background-color: #ffe0b2;
+        color: #007bff;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: #d8be95;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    li:hover {
+        background: #ffe0b2;
+    }
+
+    .cadastroForm {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
